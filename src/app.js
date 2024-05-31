@@ -47,19 +47,17 @@ app.get('/help', (req, res) => {
     })
 })
 
+
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: 'About',
+        name: 'Elham'
+    })
+})
+
 app.listen(3000, () => {
     console.log('Server is up on port 3000')
 })
-
-
-
-
-
-
-
-
-
-
 
 
 
